@@ -3,7 +3,16 @@
     display:flex;
     justify-content: @justify;
     align-items: @align;
+
 }
-.set-font{
-    
+.set-font(@size,@color,@decor){
+    color:@color;
+    font-size: @size;
+    text-decoration: @decor;
+}
+
+.create-button(@width: 2rem, @bg-color: white,@f-color:black){
+    width: @width;
+    background-color: @bg-color;
+    color:@f-color;
 }

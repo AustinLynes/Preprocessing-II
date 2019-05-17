@@ -21,6 +21,20 @@
         border-radius: 10px;
       }
     }
+    @media @mobile{
+      flex-direction: column;
+      .img-content{
+        width:90%;
+        padding:1rem;
+        box-sizing: border-box;
+        margin:0 auto;
+      }
+      .text-content{
+        text-align: center;
+        width:100%;
+        order:-1;
+      }
+    }
   }
 
   .inverse-content {
@@ -56,6 +70,25 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        .create-button(100%,@button-bg,white);
+        text-align: center;
+        .set-font(2rem, pass, pass);
+        padding:1rem;
+        border-radius: 1.5rem;
+      }
+    }
+    @media @mobile {
+      flex-direction: column;
+      .destination{
+      text-align: start;
+      margin:1rem auto;
+      width: 60%;
+      .btn{
+        margin: 1rem auto;
+        width:100%;
+      }
+      }
     }
   }
 }// home
